@@ -2,26 +2,39 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Form Validator</title>
+        <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
-            <form>
+            <form id="form" class="form">
                 <h2>Register With Us</h2>
-                <label for="userName">User Name:</label><br>
-                <input type="text" name="userName" id="userName" placeholder="Enter Username"><br>
-                <label for="email">Email:</label><br>
-                <input type="email" name="email" id="email" required placeholder="Enter Email Address"><br>
-                <label for="password">Password:</label><br>
-                <input type="password" name="password" id="password" placeholder="Enter Password"><br>
-                <label for="confirm-password">Confirm Password:</label><br>
-                <input type="password" name="confirm-password" id="confirm-password" placeholder="Confirm Password"><br>
-                <button type="submit">Submit</button>
+                    <div class="form-control">
+                        <label for="userName">User Name</label>
+                        <input type="text" id="userName" placeholder="Username">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" placeholder="Email">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Password">
+                        <small>Error Message</small>
+                    </div>
+                    <div class="form-control">
+                        <label for="confirm-password">Confirm Password</label>
+                        <input type="password" id="confirm-password" placeholder="Confirm Password">
+                        <small>Error Message</small>
+                    </div>      
             </form>
         </div>
+
         
         <script src="script.js" async defer></script>
     </body>
